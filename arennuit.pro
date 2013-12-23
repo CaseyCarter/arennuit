@@ -1,18 +1,13 @@
 QT       -= gui core
 
-TARGET = Derp
+TARGET = arennuit
 CONFIG   += console
 CONFIG   -= app_bundle qt
+CONFIG  += c++11
 
 TEMPLATE = app
 
 SOURCES += main.cpp
-
-QMAKE_CXX += -std=c++11
-QMAKE_CXXFLAGS_RELEASE -= -O2
-QMAKE_CXXFLAGS_RELEASE += -O3 -march=native
-
-INCLUDEPATH += ../Desktop/Dev/misc
 
 HEADERS += \
     Property.hpp \
