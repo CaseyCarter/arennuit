@@ -4,7 +4,8 @@
 #pragma once
 
 #include <type_traits>
-#include "Node.hpp"
+
+class Node;
 
 template <typename T>
 struct TypeFamily {
@@ -49,5 +50,7 @@ class PropertyImplementation<T*, 1> : public PropertyBase
 
 template <class T>
 class Property : public PropertyImplementation<T> {};
+
+#include "Node.hpp"
 
 #endif // PROPERTY_HPP
